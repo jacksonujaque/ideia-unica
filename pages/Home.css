@@ -1,84 +1,88 @@
-/* Estilos para o corpo da página */
+/* Estilo para o corpo do site */
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f5f5f5;
+  background-color: #ffea00; /* Amarelo */
+  color: #333;
   margin: 0;
   padding: 0;
 }
 
-/* Estilos para o cabeçalho */
-header {
-  background-color: #0077b6;
-  color: #fff;
-  text-align: center;
-  padding: 1rem 0;
+/* Estilo para o cabeçalho */
+h3 {
+  font-family: 'Arial', sans-serif;
+  color: #007BFF; /* Azul */
+  margin-top: 30px;
 }
 
-h1 {
-  font-size: 2rem;
-}
-
-/* Estilos para o formulário de cadastro */
-.form-container {
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
-  padding: 1rem;
-  margin: 2rem auto;
-  max-width: 400px;
-}
-
-.form-container label {
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
-.form-container input[type="text"],
-.form-container input[type="number"] {
+/* Estilo para os campos de entrada de texto */
+input[type="text"],
+input[type="number"] {
   width: 100%;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
+  padding: 10px;
+  margin: 5px 0;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
-.form-container button {
-  background-color: #ff6b6b; /* Cor de fundo vermelho */
-  color: #fff;
+/* Estilo para o botão de cadastro */
+button {
+  background-color: #007BFF; /* Azul */
+  color: white;
+  padding: 10px 20px;
   border: none;
-  border-radius: 4px;
-  padding: 0.5rem 1rem;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-.form-container button:hover {
-  background-color: #ff4040; /* Cor de fundo vermelho mais escura ao passar o mouse */
-}
-
-/* Estilos para a lista de doações recentes */
-.recent-donations {
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
-  padding: 1rem;
-  margin: 2rem auto;
-  max-width: 400px;
-}
-
-.recent-donations h2 {
-  font-size: 1.5rem;
-  color: #0077b6; /* Azul escuro para o título */
-}
-
-.recent-donations ul {
+/* Estilo para a lista de doações */
+ul {
   list-style: none;
   padding: 0;
 }
 
-.recent-donations li {
-  border-bottom: 1px solid #ccc;
-  padding: 0.5rem 0;
-  color: #333; /* Cor do texto mais escura */
+li {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Arial', sans-serif;
 }
 
+/* Estilo para o ícone de lixeira */
+button[aria-label="delete"] {
+  background-color: #ff3547; /* Vermelho */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+/* Estilo para a área de cadastro */
+.form-container {
+  background-color: #f1f1f1; /* Cinza claro */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para as divisórias */
+.divider {
+  background-color: #007BFF; /* Azul */
+  height: 3px;
+  margin: 30px 0;
+}
+
+/* Estilo para o rodapé */
+footer {
+  background-color: #333; /* Preto */
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
