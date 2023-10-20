@@ -1,16 +1,16 @@
 /* Estilo para o corpo do site */
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #ffea00; /* Amarelo */
-  color: #333;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
   margin: 0;
   padding: 0;
 }
 
 /* Estilo para o cabeçalho */
 h3 {
-  font-family: 'Arial', sans-serif;
-  color: #007BFF; /* Azul */
+  color: #007BFF;
+  font-size: 36px;
+  font-weight: bold;
   margin-top: 30px;
 }
 
@@ -26,7 +26,7 @@ input[type="number"] {
 
 /* Estilo para o botão de cadastro */
 button {
-  background-color: #007BFF; /* Azul */
+  background-color: #007BFF;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -47,12 +47,11 @@ li {
   margin: 5px 0;
   display: flex;
   justify-content: space-between;
-  font-family: 'Arial', sans-serif;
 }
 
 /* Estilo para o ícone de lixeira */
 button[aria-label="delete"] {
-  background-color: #ff3547; /* Vermelho */
+  background-color: #ff3547;
   color: white;
   border: none;
   border-radius: 50%;
@@ -66,7 +65,7 @@ button[aria-label="delete"] {
 
 /* Estilo para a área de cadastro */
 .form-container {
-  background-color: #f1f1f1; /* Cinza claro */
+  background-color: #f1f1f1;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -74,14 +73,14 @@ button[aria-label="delete"] {
 
 /* Estilo para as divisórias */
 .divider {
-  background-color: #007BFF; /* Azul */
+  background-color: #007BFF;
   height: 3px;
   margin: 30px 0;
 }
 
 /* Estilo para o rodapé */
 footer {
-  background-color: #333; /* Preto */
+  background-color: #333;
   color: #fff;
   padding: 10px 0;
   text-align: center;
