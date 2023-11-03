@@ -11,6 +11,7 @@ import {
 } from '@mui/material';
 import { Delete } from '@mui/icons-material';
 import { motion, AnimatePresence } from 'framer-motion';
+import axios from 'axios'; // Importe o Axios
 
 const style = {
   container: {
@@ -77,7 +78,17 @@ const App = () => {
       formData.quantidade > 0
     ) {
       const novaDoacao = { ...formData };
-      setDoacoesRecentes([novaDoacao, ...doacoesRecentes]);
+
+      // Enviar os dados para o servidor back-end
+      axios.post('http://localhost:3001/submit-form', novaDoacao)
+        .then(response => {
+          console.log(response.data); // Isso é opcional, apenas para verificação
+        })
+        .catch(error => {
+          console.error('Erro ao enviar os dados do formulário', error);
+        });
+
+      // Limpar o formulário após o envio
       setFormData({
         nome: '',
         endereco: '',
@@ -207,4 +218,3 @@ const App = () => {
 };
 
 export default App;
-
